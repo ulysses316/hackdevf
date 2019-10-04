@@ -1,0 +1,252 @@
+{
+  "platform": "django",
+  "models": [
+    {
+      "name": "adopted",
+      "attrs": [
+        {
+          "name": "users",
+          "type": "user[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "0..*"
+          },
+          "read": true,
+          "write": true,
+          "empty": false,
+          "delete": "CASCADE"
+        },
+        {
+          "name": "pets",
+          "type": "pet[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "0..*"
+          },
+          "read": true,
+          "write": true,
+          "empty": false,
+          "delete": "CASCADE"
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    },
+    {
+      "name": "chars",
+      "attrs": [
+        {
+          "name": "size",
+          "type": "int",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "weight",
+          "type": "int",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "pet",
+          "type": "pet[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "1"
+          },
+          "write": false,
+          "read": true,
+          "empty": false,
+          "delete": "CASCADE"
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    },
+    {
+      "name": "for_adoption",
+      "attrs": [
+        {
+          "name": "users",
+          "type": "user[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "0..*"
+          },
+          "read": true,
+          "write": true,
+          "empty": false,
+          "delete": "CASCADE"
+        },
+        {
+          "name": "pets",
+          "type": "pet[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "0..*"
+          },
+          "read": true,
+          "write": true,
+          "empty": false,
+          "delete": "CASCADE"
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    },
+    {
+      "name": "media",
+      "attrs": [
+        {
+          "name": "file_name",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "user",
+          "type": "user[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "1"
+          },
+          "write": false,
+          "read": true,
+          "empty": false,
+          "delete": "CASCADE"
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    },
+    {
+      "name": "pet",
+      "attrs": [
+        {
+          "name": "name",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "ster",
+          "type": "boolean",
+          "default": "false",
+          "read": true,
+          "write": true,
+          "empty": false
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    },
+    {
+      "name": "raza",
+      "attrs": [
+        {
+          "name": "raza",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "pet",
+          "type": "pet[]",
+          "is_fk": true,
+          "card": {
+            "ref": "0..*",
+            "has": "1"
+          },
+          "write": false,
+          "read": true,
+          "empty": false,
+          "delete": "CASCADE"
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    },
+    {
+      "name": "user",
+      "attrs": [
+        {
+          "name": "house_size",
+          "type": "int",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "pet_number",
+          "type": "int",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "city",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "tel",
+          "type": "int",
+          "read": true,
+          "write": true,
+          "empty": false
+        },
+        {
+          "name": "facebook",
+          "type": "string",
+          "length": "70",
+          "read": true,
+          "write": true,
+          "empty": false
+        }
+      ],
+      "read": true,
+      "write": true,
+      "empty": false
+    }
+  ],
+  "export": {}
+}
