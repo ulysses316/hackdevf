@@ -1,7 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import cx from "classnames";
+import { Link } from "react-router-dom";
+import Navigation from "./Navigation";
 
-export default class Perfil extends Component {
-  render() {
-    return <div>Perfil</div>;
-  }
+export default function Perfil() {
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 }
