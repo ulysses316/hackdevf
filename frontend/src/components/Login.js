@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 __Seed builder__v1.0
 */
