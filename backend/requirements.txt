@@ -1,5 +1,4 @@
 boto3==1.9.229
-Django==2.2.5
 django-cors-headers==3.1.0
 django-dotenv==1.4.2
 django-filter==2.2.0
@@ -14,3 +13,9 @@ pip==19.2.1
 psycopg2-binary==2.8.3
 PyYAML==3.13
 setuptools==41.0.1
+
+Django==2.2.6
+pkg-resources==0.0.0
+pytz==2019.2
+sqlparse==0.3.0
+
