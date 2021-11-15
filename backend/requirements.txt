@@ -9,7 +9,7 @@ django-storages==1.7.2
 djangorestframework==3.10.3
 dynamic-rest==1.9.4
 graphene-django==2.5.0
-pip==19.2.1
+pip==21.1
 psycopg2-binary==2.8.3
 django-dotenv==1.4.2
 graphene==2.1.8
